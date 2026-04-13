@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* HEADER */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: #020617;
+  z-index: 1000;
+  border-bottom: 1px solid #1e293b;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+nav h1 {
+  color: #a78bfa;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav a {
+  color: #e2e8f0;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #a78bfa;
+}
+
+nav a.ativo {
+  color: #a78bfa;
+  border-bottom: 2px solid #a78bfa;
+}
+
+/* MAIN */
+main {
+  margin-top: 80px;
+}
+
+section {
+  padding: 60px 40px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  color: #e2e8f0;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background: #a78bfa;
+  width: 60px;
+  margin: 10px 0 20px 0;
+}
+
+/* PROJETOS */
+#lista-projetos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background: #020617;
+  border: 1px solid #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  width: 280px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  border-color: #a78bfa;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+/* BOTÃO */
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  background: #a78bfa;
+  color: #020617;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #7c3aed;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #1e293b;
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
+
+  #lista-projetos {
+    flex-direction: column;
+    align-items: center;
+  }
+}
